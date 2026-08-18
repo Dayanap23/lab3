@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Minimal - Colección Exclusiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <nav class="navbar">
+    <div class="nav-brand">Minimal Shop</div>
+    
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      &#9776;
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"></a>inicio</li>
+      <li><a href="carrito.html">Carrito(<span id="cartCount">0</span>)</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+    </ul>
+  </nav>
+<section id="registro">
+      <h2>Registro de Clientes</h2>
+      <div class="card-box form-container">
+        <form id="clientForm">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" required placeholder="Ej. Ana García">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" required placeholder="correo@ejemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" required placeholder="5555-5555">
+          </div>
+          <button type="submit" class="btn-submit">Guardar Cliente</button>
+        </form>
+      </div>
+    </section>
