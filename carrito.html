@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Minimal - Carrito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">Minimal Shop</div>
+    
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      &#9776;
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Productos</a></li>
+      <li><a href="carrito.html" class="active">Carrito (<span id="cartCount">0</span>)</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section id="carrito">
+      <h2>Carrito de Compras</h2>
+      <div class="card-box">
+        <ul id="cartItemsList" class="cart-list">
+          <li class="empty-msg">Tu carrito está vacío.</li>
+        </ul>
+        <div class="cart-summary">
+          <strong>Total: Q <span id="cartTotal">0.00</span></strong>
+          <button class="btn-clear" onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Minimal Shop. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>36

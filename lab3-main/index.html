@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Minimal - Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <nav class="navbar">
+    <div class="nav-brand">Minimal Shop</div>
+    
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      &#9776;
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Productos</a></li>
+      <li><a href="carrito.html">Carrito (<span id="cartCount">0</span>)</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Encabezado Principal -->
+  <header class="hero">
+    <h1>Edición Limitada & Diseño Exclusivo</h1>
+    <p>Ropa de alta calidad para tu estilo diario</p>
+  </header>
+
+  <main class="container">
+    <section id="productos">
+      <h2>Productos Destacados</h2>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-img"><img src="img/pantalon.jfif" alt="pantalon" width="350" height="350">
+          <Pantalon class=""></Pantalon></div>
+          <h3 class="product-title">Pantalon formal</h3>
+          <p class="product-price">Q 350.00</p>
+          <button class="btn-add" onclick="agregarAlCarrito('Pantalon formal', 350)">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img"><img src="img/camisa.jfif" alt="camisa" width="350" height="350"></div>
+          <h3 class="product-title">Camisa Algodón Premium</h3>
+          <p class="product-price">Q 180.00</p>
+          <button class="btn-add" onclick="agregarAlCarrito('Camisa Algodón Premium', 180)">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img"><img src="img/chaqueta.jfif" alt="chaqueta" width="350" height="350"></div>
+          <h3 class="product-title">Pantalón Casual Fit</h3>
+          <p class="product-price">Q 260.00</p>
+          <button class="btn-add" onclick="agregarAlCarrito('Chaqueta', 260)">Agregar al Carrito</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Minimal Shop. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
